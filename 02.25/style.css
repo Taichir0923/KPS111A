@@ -1,0 +1,68 @@
+/* 
+    id,
+    class,
+    tag ner
+*/
+
+.cl {
+    color: rgb(0 , 255 , 0);
+    background-color: aqua;
+    display: inline;
+}
+
+#ssl {
+    color: #ff0000;
+}
+
+span {
+    color: #0000ff;
+    background-color: #ffff00;
+}
+
+input {
+    display: block;
+    width: 100%;
+}
+
+ul {
+    background-color: #21295F;
+}
+
+li {
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline;
+    color: white;
+}
+
+/* parent , child , sibling */
+
+/* 
+1. margin
+2. padding
+*/
+
+.title {
+    background-color: #ffff00;
+    width: max-content;
+    border: 5px solid #000;
+    border-radius: 10px;
+    padding: 20px 60px 80px;
+    transition: .4s;
+}
+
+.title:hover {
+    color: yellow;
+    background-color: #000;
+}
+
+/* 
+border-style - хүрээний төрлийг тодорхойлно
+border-width - хүрээний хэмжээ /solid , dashed , dotted/
+border-color - хүрээний өнгө
+*/
+
+/* 
+Hover effect - Mouse элемент дээгүүр өнгөрөх үед анимешн оруулах
+*/
