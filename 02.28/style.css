@@ -8,10 +8,10 @@
 /* position => 1. absolute , 2. relative , 3. fixed */
 
 /* header , div */
-/* 
+
 .red {
     width: 400px;
-    height: 294px;
+    height: 400px;
     background-color: red;
     position: relative;
     overflow: hidden;
@@ -28,14 +28,15 @@
     text-align: center;
     margin: auto;
     transition: .4s;
-    z-index: -1;
 }
 
 .zurag {
     width: 100%;
-} */
+    height: 100%;
+    object-fit: cover;
+}
 
-.yellow {
+/* .yellow {
     width: 400px;
     height: 300px;
     background-color: yellow;
@@ -51,6 +52,6 @@
     position: absolute;
     top: 100%;
     left: 100%;
-}
+} */
 
 /* calc() */
