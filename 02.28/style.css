@@ -1,0 +1,56 @@
+/* layout */
+/* inline , block */
+/* display => flex box , grid box */
+/* position =>  */
+
+/* hover , position */
+
+/* position => 1. absolute , 2. relative , 3. fixed */
+
+/* header , div */
+/* 
+.red {
+    width: 400px;
+    height: 294px;
+    background-color: red;
+    position: relative;
+    overflow: hidden;
+}
+
+.yellow {
+    background-color: rgba(0 , 0 , 0 , .5);
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    color: white;
+    text-align: center;
+    margin: auto;
+    transition: .4s;
+    z-index: -1;
+}
+
+.zurag {
+    width: 100%;
+} */
+
+.yellow {
+    width: 400px;
+    height: 300px;
+    background-color: yellow;
+    position: relative;
+    margin: 10px;
+    display: inline-block;
+}
+
+.green {
+    width: 70px;
+    height: 60px;
+    background-color: green;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+}
+
+/* calc() */
