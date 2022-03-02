@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* flex box */
+
+/* wrap */
+
+.container {
+    width: 100%;
+    height: 200px;
+    display: flex; /* child elementuudiig inline bolgoj huvirgana */
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+/* 1rem = 16px */
+.container .red {
+    width: 50%;
+    height: 100%;
+    background-color: red;
+}
+
+.container .yellow {
+    width: 50%;
+    height: 100%;
+    background-color: yellow;
+}
+
+.container .green {
+    width: 50%;
+    height: 100%;
+    background-color: green;
+}
