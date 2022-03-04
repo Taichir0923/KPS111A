@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.header {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+/* 
+    flex-direction - child element bairshih chigleliig zaana;
+    center , flex-start , flex-end
+
+    space-between
+    space-evenly
+    space-around
+*/
+
+/* viewport height - vh */
+/* viewport width - vw */
+/* flex-direction - main axys-g todorhoilo */
+/* justify-content - main axys-n daguu elementuudiin bairshliig todorhoilno */
+/* align-items - cross axys-n daguu elementiid bairshliig todorhoilno */
+
+.row {
+    width: 100%;
+    height: 100vh;
+    background-color: yellow;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row; /* main - axys */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row .box {
+    width: 200px;
+    height: 150px;
+    background-color: black;
+}
+
+/* header  */
+/* 1150px - 1350px */
