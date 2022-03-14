@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+    flexbox - 1 хэмжээст хуваалт
+    gridbox - 2 хэмжээст хуваалт
+*/
+
+/* .wrap {
+    width: 1248px;
+    margin: auto;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+} */
+/* 
+.wrap .box {
+    flex: 1;
+    height: 200px;
+    background-color: yellow;
+}
+
+.middle {
+    background-color: blueviolet !important;
+    flex: 2 !important
+} */
+/* 
+.wrap .box {
+    width: 300px;
+    height: 200px;
+    background-color: yellow;
+} */
+
+.wrap {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 250px 250px;
+    gap: 1rem;
+}
+
+.box {
+    background-color: yellow;
+}
+
+.box:nth-child(1){
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
