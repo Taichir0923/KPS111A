@@ -16,10 +16,6 @@
     width: 50%;
 }
 
-.box {
-    height: 150px;
-}
-
 .pink {
     background-color: crimson;
 }
@@ -60,3 +56,113 @@
 /* 
 flexbox
 */
+
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-flex-start {
+    align-items: flex-start;
+}
+/* align-items-end */
+/* items-end */
+.align-end {
+    align-items: flex-end;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.gap-2 {
+    gap: 1.5rem;
+}
+
+.h-1 {
+    height: 100px;
+}
+.h-2 {
+    height: 200px;
+}
+.h-3 {
+    height: 300px;
+}
+.h-4 {
+    height: 400px;
+}
+/* sass */
+
+
+.w-full {
+    width: 100%;
+}
+
+.one-fourth {
+    width: 25%;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.grid {
+    display: grid;
+}
+
+/* col-2 bootstrap */
+/* grid-cols-2 tailwind */
+.grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* col-3 */
+.grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-cols-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+/* sass - syntactically awesome style sheet */
