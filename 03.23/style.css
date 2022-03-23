@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 
+input[type=checkbox]:checked + p {
+    background-color: yellow;
+}
+
+label div {
+    padding: .5rem 1.5rem;
+    background-color: bisque;
+    width: max-content;
+}
+
+#box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #f00;
+}
+
+#box:target {
+    background-color: yellow;
+}
+
+a:visited {
+    color: #f00;
+} */
+/* Pseudo Elements - Element */
+/* Pseudo Class - class */
+/* Adjacent selector ~ */
+
+/* .arrow {
+    border: 10px solid black;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    width: max-content;
+    margin: 5rem;
+} */
+/* pseudo element */
+
+/* .pseudo-test {
+    background-color: blueviolet;
+}
+
+.pseudo-test::before {
+    content: "Before";
+    background-color: aqua;
+}
+
+.pseudo-test::after {
+    content: "After";
+} */
+
+.btn {
+    margin: 2rem auto;
+    border: 1px solid black;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: white;
+    width: 200px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transform: scale(1);
+    transition: .3s;
+}
+
+.btn::before {
+    content: '';
+    background-color: rgb(12, 113, 245);
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: -50%;
+    bottom: -150%;
+    border-radius: 50%;
+    transform: scale(0); /* hemjeeg oorchilno */
+    transition: .6s;
+}
+
+.btn .text {
+    position: relative;
+}
+
+.btn:hover::before {
+    transform: scale(1);
+}
+
+.btn:hover {
+    transform: scale(1.5);
+}

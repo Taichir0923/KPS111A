@@ -43,6 +43,23 @@ body {
 .header .navigation {
     display: flex;
     align-items: center;
+    position: relative;
+}
+
+.header .navigation #check:checked + .layer {
+    display: block;
+}
+
+.header .navigation .layer {
+    width: 300px;
+    height: 400px;
+    background-color: black;
+    position: absolute;
+    top: 100%;
+    border-top: 1px solid #00b3ff;
+    right: 0;
+    z-index: 3;
+    display: none;
 }
 
 .header .navigation .item {
