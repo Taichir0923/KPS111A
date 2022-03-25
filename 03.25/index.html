@@ -71,6 +71,20 @@
             transform: rotate(45deg);
             top: 0 !important;
         }
+
+        #check:checked + label .burger .line {
+            background-color: transparent !important;
+        }
+
+        #check:checked + label .burger .line::before {
+            transform: rotate(-45deg);
+            bottom: 0 !important;
+        }
+
+        #check:checked + label .burger .line::after {
+            transform: rotate(45deg);
+            top: 0 !important;
+        }
     </style>
 </head>
 <body>
