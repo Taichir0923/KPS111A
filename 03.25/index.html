@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Desktop first */
+        /* Mobile first */
+        .header {
+            width: 100%;
+            background-color: #f00;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .header .burger {
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .header .burger .line {
+            width: 100%;
+            height: 3px;
+            background-color: white;
+            position: relative;
+            transition: .3s;
+        }
+
+        .header .burger .line::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            bottom: 8px;
+            transition: .3s;
+        }
+
+        .header .burger .line::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            top: 8px;
+            transition: .3s;
+        }
+
+        .nav-active {
+            background-color: transparent !important;
+        }
+
+        .nav-active::before {
+            transform: rotate(-45deg);
+            bottom: 0 !important;
+        }
+
+        .nav-active::after {
+            transform: rotate(45deg);
+            top: 0 !important;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="https://news.mn/wp-content/uploads/2018/08/Logo.svg" alt="">
+
+        <input id="check" type="checkbox" hidden>
+        <label for="check">
+            <div class="burger">
+                <div class="line"></div>
+            </div>
+        </label>
+    </header>
+</body>
+</html>
