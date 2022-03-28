@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .btn {
+            padding: .5rem 1.5rem;
+            background-color: rgb(52, 73, 94, .3);
+            border: 3px solid rgb(52, 73, 94);
+            font-weight: 700;
+            color: rgb(52, 73, 94);
+            border-radius: 10px;
+            transition: .3s;
+            cursor: pointer;
+        }
+
+        .btn a {
+            text-decoration: none;
+            color: rgb(52, 73, 94);
+        }
+
+        .btn:hover {
+            background-color: rgb(52, 73, 94);
+        }
+
+        .btn:hover a {
+            color: white;
+        }
+
+        .backdrop {
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            background-color: rgb(0, 0, 0, .5);
+            top: 0;
+            transition: .3s all ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .backdrop:target {
+            opacity: 1;
+            visibility: visible
+        }
+
+        .backdrop:target .modal {
+            transform: translateY(0);
+        }
+
+        .backdrop .modal {
+            width: 500px;
+            height: 300px;
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all .3s ease;
+            transform: translateY(-200px);
+        }
+
+        .modal__header {
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .modal__footer {
+            padding: 1rem 1.5rem;
+            border-top: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 10px
+        }
+
+        .light {
+            background-color: white !important;
+        }
+
+        .light:hover a {
+            color: rgb(52, 73, 94);
+        }
+    </style>
+</head>
+<body>
+    <button class="btn">
+        <a href="#modal">Show Modal</a>
+    </button>
+
+    <div id="modal" class="backdrop">
+        <div class="modal">
+            <div class="modal__header">
+                <h3>Title</h3>
+                <a href="#">
+                    <h3>&times;</h3>
+                </a>
+            </div>
+            <div></div>
+            <div class="modal__footer">
+                <button class="btn light">
+                    <a href="#">Хаах</a>
+                </button>
+                <button class="btn">
+                    <a>Окэй</a>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
