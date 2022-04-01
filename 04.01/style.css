@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* 
+    margin
+    padding
+    flexbox
+    gridbox
+    transition
+*/
+
+/* .box {
+    width: max-content;
+    background-color: yellow;
+    border: 2px solid #000;
+    padding: 1rem 5rem 3rem 1rem;
+    margin: auto;
+} */
+
+.wrap {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap .container {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap .container .main {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    transform: rotate(9deg);
+    border: 1px solid #fff;
+}
+
+.inner {
+    position: absolute;
+    border-radius: 50%;
+    top: 15px;
+    left: 15px;
+    bottom: 15px;
+    right: 15px;
+}
+
+.rotate {
+    transform: rotate(18deg);
+}
+
+.divide {
+    background-image: conic-gradient(
+        white 0deg 18deg,
+        black 18deg 36deg,
+        white 36deg 54deg,
+        black 54deg 72deg,
+        white 72deg 90deg,
+        black 90deg 108deg,
+        white 108deg 126deg,
+        black 126deg 144deg,
+        white 144deg 162deg,
+        black 160deg 180deg,
+        white 180deg 198deg,
+        black 198deg 216deg,
+        white 216deg 234deg,
+        black 234deg 252deg,
+        white 252deg 270deg,
+        black 270deg 288deg,
+        white 288deg 306deg,
+        black 306deg 324deg,
+        white 324deg 342deg,
+        black 342deg 360deg
+    );
+}
+
+/* .wrap h1:nth-child(1) {
+    order: 3; гарч ирэх дарааллыг тодорхойлно 
+} */
