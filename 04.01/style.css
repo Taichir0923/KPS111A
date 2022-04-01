@@ -55,8 +55,35 @@
     right: 15px;
 }
 
+.eye {
+    position: absolute;
+    border-radius: 50%;
+    top: 12px;
+    left: 12px;
+    bottom: 12px;
+    right: 12px;
+}
+
+
+.field {
+    position: absolute;
+    border-radius: 50%;
+    top: 45px;
+    left: 45px;
+    bottom: 45px;
+    right: 45px;
+}
+
 .rotate {
     transform: rotate(18deg);
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-black {
+    background-color: black;
 }
 
 .divide {
