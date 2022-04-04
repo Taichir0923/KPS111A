@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Responsive layout */
+/* media query */
+/* Break point */
+/* 
+display size
+extra small       : xs < 576px
+small             : 576px <= sm < 768px
+medium            : 768px <= md < 1024px
+large             : 1024px <= lg < 1300px
+extra large       : 1300px <= xl < 1500px
+extra extra large : 1500px <= xxl (2xl)
+*/
+
+/* 
+1. Mobile First - @media(min-width: size);
+2. Desktop First - @media(max-width: size);
+*/
+/* 
+.line {
+    width: 100%;
+    height: 100px;
+    background-color: yellow;
+}
+
+.desktop {
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    border: 10px solid red;
+}
+
+@media (min-width: 576px) {
+    .line {
+        background-color: brown;
+    }
+}
+
+@media (min-width: 768px) {
+    .line {
+        background-color: aqua;
+    }
+}
+
+@media (max-width: 1150px) {
+    .desktop {
+        border-color: black;
+    }
+}
+
+@media (max-width: 1024px) {
+    .desktop {
+        border-color: yellow;
+    }
+}
+
+@media (max-width: 576px) {
+    .desktop {
+        border-color: rgb(0, 255, 72);
+    }
+} */
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(52, 51, 51);
+    color: white;
+}
+
+.header #logo {
+    font-size: 48px;
+    padding-left: 1rem;
+}
+
+.header .mobile_nav_btn {
+    padding: 1rem;
+    font-size: 22px;
+}
+
+.header .desktop_navigation {
+    display: none;
+    list-style: none;
+}
+
+.header .desktop_navigation li {
+    padding: 1.25rem 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.header .desktop_navigation li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    background-color: white;
+    height: 3px;
+    width: 100%;
+    right: 100%;
+    transition: .3s ease-in-out;
+}
+
+.header .desktop_navigation li:hover::before {
+    right: 0;
+}
+
+@media (min-width: 768px) {
+    .header .mobile_nav_btn {
+        display: none;
+    }
+
+    .header .desktop_navigation {
+        display: flex;
+    }
+}
