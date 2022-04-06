@@ -138,6 +138,19 @@ extra extra large : 1500px <= xxl (2xl)
     border: 1px solid #000;
 }
 
+.main .grid {
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3 , 250px);
+}
+
+.main .grid .box {
+    border: 1px solid #000;
+}
+
 @media (min-width: 576px){
     .main .wrap .box {
         width: 500px;
@@ -159,5 +172,14 @@ extra extra large : 1500px <= xxl (2xl)
 
     .main .wrap {
         flex-direction: row;
+    }
+
+    .main .grid {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: repeat(2 , 250px);
+    }
+
+    .main .grid .box:nth-child(1){
+        grid-row: 1/3;
     }
 }
