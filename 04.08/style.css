@@ -22,6 +22,8 @@ body {
     background-color: var(--mainBg);
     color: var(--text);
     font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
 }
 
 .header {
@@ -39,6 +41,45 @@ body {
 .header .logo {
     width: 32px;
     overflow: hidden;
+}
+
+.header .user {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.header .user .name {
+    display: none;
+}
+
+.header .user .dots {
+    position: relative;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--text);
+}
+
+.header .user .dots::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: inherit;
+    top: 8px;
+}
+
+.header .user .dots::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: inherit;
+    bottom: 8px;
 }
 
 .logo img {
@@ -111,10 +152,73 @@ body {
     display: none;
 }
 
+.header .tools {
+    display: none;
+    gap: .5rem;
+}
+
+.header .tools .toggle {
+    width: 37px;
+    height: 37px;
+    border-radius: 4px;
+    background-color: var(--btnBG);
+    color: var(--grey);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header .tools .search {
+    height: 37px;
+    width: 400px;
+    padding: 4px;
+    display: flex;
+    background-color: var(--btnBG);
+    border-radius: 4px;
+    padding-right: 44px;
+    position: relative;
+}
+
+.header .tools .search .icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-45%);
+    right: 14px;
+}
+
+.header .tools .search input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    padding: 8px;
+    color: white;
+}
+
+.header .tools .search input::placeholder {
+    color: var(--text);
+}
+
+.header .tools .search input:focus {
+    outline: none;
+}
+
 @media (min-width: 1024px) {
+    .header .tools {
+        display: flex;
+    }
 
     .header {
         padding-left: 90px;
+    }
+
+    .header .logo {
+        display: none;
+    }
+
+    .header .user .name {
+        display: block;
     }
 
     .navigation {
@@ -132,5 +236,14 @@ body {
     .active {
         width: 2px;
         height: 100%;
+    }
+
+    .circle.red {
+        display: none;
+    }
+
+    .circle.light {
+        border-color: var(--red);
+        color: var(--red);
     }
 }
