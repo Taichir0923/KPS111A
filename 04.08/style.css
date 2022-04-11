@@ -36,6 +36,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: .85rem 1.25rem;
+    z-index: 10;
 }
 
 .header .logo {
@@ -123,6 +124,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 11;
 }
 
 .navigation .nav-item {
@@ -204,6 +206,90 @@ body {
     outline: none;
 }
 
+.main {
+    width: 100%;
+    padding-top: 64px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+/* .main::-webkit-scrollbar {
+    width: 5px;
+} */
+
+.main .banner img {
+    width: 100%;
+    border-top-left-radius: 10px;
+}
+
+.main .banner {
+    overflow: hidden;
+}
+
+.main .row {
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.main .row .swiper-contain {
+    width: 100%;
+    height: 100px;
+}
+
+.main .row .swiper-contain .swiper {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+.main .row .swiper-contain .swiper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    position: inherit;
+    z-index: 10;
+}
+
+.main .row .swiper-contain .swiper .swiper-slide {
+    border-radius: 8px;
+    transition: .4s ease-in-out;
+}
+
+.main .row .swiper-contain .swiper .swiper-slide .detail {
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    top: 0%;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s ease-in-out;
+}
+
+.main .row .swiper-contain .swiper .swiper-slide:hover {
+    transform: scale(1.4);
+    z-index: 10;
+    cursor: pointer;
+}
+
+.main .row .swiper-contain .swiper .swiper-slide:hover .detail {
+    visibility: visible;
+    opacity: 1;
+    top: 90%;
+}
+
+.main .row h1 {
+    font-size: 18px;
+}
+
+@media (min-width: 480px){
+    .main .row .swiper-contain {
+        height: 140px;
+    }
+} 
+
 @media (min-width: 1024px) {
     .header .tools {
         display: flex;
@@ -245,5 +331,13 @@ body {
     .circle.light {
         border-color: var(--red);
         color: var(--red);
+    }
+
+    .main {
+        padding-left: 90px;
+    }
+
+    .main .row {
+        padding: 0;
     }
 }
